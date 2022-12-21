@@ -1,0 +1,269 @@
+/* General changes */
+h3
+{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+body
+{
+ font-family: 'roboto', sans-serif;  /*the font will applied into the entier page */
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+
+.navbar
+{
+  border-bottom: black solid 4px;
+}
+
+.navbar-brand
+{
+  color:white !important;
+  font-size:24px;
+}
+
+.nav-link
+{
+text-transform: uppercase;
+}
+.nav-link:hover{
+  color:white !important;
+}
+
+#header
+{
+  background: url('../images/w.jpg') no-repeat ;
+  background-size: cover;
+  height: 100vh;
+}
+
+.h1
+{
+margin-top:50px;
+}
+.p
+{
+  font-family:'Zen Dots',cursive;
+}
+
+#header .overlay
+{
+  background-color:rgba(0, 0, 0, 0.2);
+  height:100vh;
+}
+
+.btn-outline-secondary:hover
+{
+  background-color:lightpink;
+  cursor: pointer;
+}
+
+.btn-outline-success:hover
+{
+  background-color:black;
+    cursor: pointer;
+}
+
+
+/* icon size */
+#feature .bi
+{
+  font-size:80px;
+}
+
+/* feature section*/
+#feature .i1:hover
+{
+  color:rgba(10, 163, 25, 0.4);
+  cursor: pointer;
+
+}
+
+#feature .i2:hover
+{
+  color:rgba(0, 0, 255, 1);
+  cursor: pointer;
+
+}
+
+#feature .i3:hover
+{
+  color:rgba(255, 255, 0, 1);
+  cursor: pointer;
+
+}
+
+
+
+#feature h3:hover
+{
+  color:rgba(10, 163, 25, 0.4);
+    cursor: pointer;
+}
+
+/* Work section */
+#work
+{
+  background:url(../images/www.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+#work i:hover{
+  color:red;
+}
+
+#history
+{
+  background-color:lightgrey;
+}
+
+.historyarea
+{
+  background-color:white;
+  height:450px;
+  margin-right: -40px;
+  padding: 30px;
+}
+
+.historyimage
+{
+width: 300px;
+height: 300px;
+margin-top: 60px;
+margin-left: -10px;
+z-index:50;
+position:relative;
+}
+
+/* gallery */
+#galley .col-md-3
+{
+  padding-left:0;
+  padding-right: 0;
+}
+
+.imagecontainer
+{
+  position: relative;
+  cursor: pointer;
+}
+
+.imgoverlay
+{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background-color: lightgrey;
+  opacity: 0;
+}
+
+.imagecontainer:hover .imgoverlay
+{
+  opacity:.5;
+
+}
+
+.imgtext
+{
+  position: absolute;
+  color:black;
+}
+
+#footer
+{
+  background-color: black;
+  width:100%;
+}
+
+#footer .imagecontainer{
+  margin:auto;
+  padding:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials a
+{
+  color:white;
+  margin-left:-80px;
+  font-size: 22px;
+  text-decoration:none;
+}
+
+.content h2
+{
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+#footer .container .content
+{
+
+  color:white;
+}
+
+.second
+{
+  margin-left: 420px;
+}
+
+.first
+{
+  margin-left: -220px;
+}
+
+/* media querry */
+@media screen and (max-width: 1200px)
+ {
+  #header
+  {
+    background-size: 1200px 100vh;
+  }
+}
+@media screen and (max-width: 992px)
+ {
+  #header
+  {
+    background-size: 992px 100vh;
+  }
+}
+@media screen and (max-width: 760px)
+ {
+  #header
+  {
+    background-size: 760px 100vh;
+  }
+.historyimage
+{
+  margin-left: 0;
+  margin-top: 0;
+  text-align: center;
+}
+}
+@media screen and (max-width: 576px)
+ {
+  #header
+  {
+    background-size: 576px 100vh;
+  }
+  .historyimage
+  {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+}
